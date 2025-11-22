@@ -9,9 +9,10 @@ public class evenodd {
 		int num=ac.nextInt();
 		
 		if(num % 2 == 0) {
-			System.out.println( "Even" ) ;
-		} else {
-			System.out.println( "Odd" ) ;
+			System.out.println("Even");
+		}
+		else {
+			System.out.println("Odd");
 		}
 	}
 
