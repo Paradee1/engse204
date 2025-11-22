@@ -25,7 +25,6 @@ public class mune {
 		default:
 			System.out.println("Invalid Menu");
 			break;
-		
 		}
 
 	}
