@@ -8,8 +8,8 @@ public class mul {
 		Scanner ab = new Scanner(System.in);
 		int num=ab.nextInt();
 		
-		for(int i = 1 ; i <= 12 ; i++) {
-			System.out.println(num+" x "+i+" = "+(num*i));
+		for(int i=1;i<=12;i++) {
+			System.out.println(num + " x " + i + " = " +(num * i));
 		}
 
 	}
