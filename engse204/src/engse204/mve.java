@@ -11,7 +11,7 @@ public class mve {
 		
 		int i = 1;
 		while (i <= 12) {
-		    System.out.println(num + " x " + i + " = " + (num * i));
+		    System.out.println(num+" x "+i+" = "+(num*i));
 		    i++;
 		}
 
