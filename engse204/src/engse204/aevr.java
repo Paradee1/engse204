@@ -2,7 +2,7 @@ package engse204;
 
 import java.util.Scanner;
 
-public class aevr { //แก้1.9
+public class aevr { 
 
 	public static void main(String[] rgs) {
 		Scanner ar=new Scanner(System.in);

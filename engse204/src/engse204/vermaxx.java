@@ -2,7 +2,7 @@ package engse204;
 
 import java.util.Scanner;
 
-public class vermaxx {//แก้ 1.8
+public class vermaxx {
 
 	public static void main(String[] rgs) {
 		Scanner mx=new Scanner(System.in);

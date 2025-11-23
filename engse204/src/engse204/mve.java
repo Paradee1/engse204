@@ -2,7 +2,7 @@ package engse204;
 
 import java.util.Scanner;
 
-public class mve { //1.6แก้
+public class mve { 
 
 	public static void main(String[] rgs) {
 		Scanner ml=new Scanner(System.in);
