@@ -5,28 +5,28 @@ import java.util.Scanner;
 public class board {
 
 	public static void main(String[] rgs) {
-		Scanner db=new Scanner(System.in);
+		Scanner br=new Scanner(System.in);
 
-		int R = db.nextInt();
-		int C = db.nextInt();
+		int r = br.nextInt();
+		int c = br.nextInt();
 
-		int[][] grid = new int[R][C];
+		int[][] grid = new int[r][c];
 
-		for (int i = 0; i < R; i++) {
-			for (int j = 0; j < C; j++) {
-				grid[i][j] = db.nextInt();
+		for (int i = 0; i < r; i++) {
+			for (int j = 0; j < c; j++) {
+				grid[i][j] = br.nextInt();
 	            }
 	        }
 
-		int onlineCount = 0;
-		for (int i = 0; i < R; i++) {
-			for (int j = 0; j < C; j++) {
+		int onlinecount = 0;
+		for (int i = 0; i < r; i++) {
+			for (int j = 0; j < c; j++) {
 				if (grid[i][j] == 1) {
-					onlineCount++;
+					onlinecount++;
 	                }
 	            }
 	        }
-		System.out.println(onlineCount);
+		System.out.println(onlinecount);
 		
 	}
 
