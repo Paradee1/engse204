@@ -7,13 +7,13 @@ public class Minesweeper {
 	public static void main(String[] rgs) {
         Scanner mi = new Scanner(System.in);
 
-        int R = mi.nextInt();
-        int C = mi.nextInt();
+        int r = mi.nextInt();
+        int c = mi.nextInt();
 
-        char[][] map = new char[R][C];
+        char[][] map = new char[r][c];
 
-        for (int i=0;i<R;i++) {
-            for (int j = 0; j < C; j++) {
+        for (int i=0;i<r;i++) {
+            for (int j = 0; j < c; j++) {
                 map[i][j] = mi.next().charAt(0);
             }
         }
@@ -35,7 +35,7 @@ public class Minesweeper {
             int nr = targetR + dR[k];
             int nc = targetC + dC[k];
 
-            if (nr >= 0 && nr < R && nc >= 0 && nc < C) {
+            if (nr >= 0 && nr < r && nc >= 0 && nc < c) {
                 if (map[nr][nc] == '*') {
                     count++;
                 }
