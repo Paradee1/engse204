@@ -8,11 +8,12 @@ public class mnmn {
 		Scanner am=new Scanner(System.in);
 		
 		int n=am.nextInt();
+		
 		int sum = 0;
 		
 		for(int i=0;i<n;i++) {
-			int num=am.nextInt();
-			sum +=num;
+			int number=am.nextInt();
+			sum +=number;
 		}
 		System.out.println(sum);
 		
