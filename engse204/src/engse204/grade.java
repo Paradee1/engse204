@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class grade {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	public static void main(String[] rgs) {
+		Scanner cs = new Scanner(System.in);
+		
 		System.out.print("Input Score = ");
-		int score=sc.nextInt();
+		int score=cs.nextInt();
 		
 		if(score >= 80){
 			System.out.println("A");
