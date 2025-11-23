@@ -12,9 +12,11 @@ public class aevr {
 		
 		int n=ar.nextInt();
 		
+		int[] data=new int[n];
+		
 		for(int i=0;i<n;i++) {
-			int num=ar.nextInt();
-			sum += num;
+			data[i]=ar.nextInt();
+			sum += data[i];
 		}
 		ave = sum / n;
 		System.out.println("Average = "+ave);
