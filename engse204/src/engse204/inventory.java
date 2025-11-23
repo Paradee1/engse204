@@ -12,7 +12,6 @@ public class inventory {
 		int[] productID=new int[n];
 		int[] Stock=new int[n];
 		
-		
 		for(int i=0;i<n;i++) {
 			productID[i]=nv.nextInt();
 			Stock[i]=nv.nextInt();
@@ -32,7 +31,6 @@ public class inventory {
 		if(!check) {
 			System.out.println("Product "+SearchID+" not found");
 		}
-		
 		
 	}
 
