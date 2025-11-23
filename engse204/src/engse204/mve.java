@@ -1,0 +1,18 @@
+package engse204;
+
+import java.util.Scanner;
+
+public class mve { //1.6แก้
+
+	public static void main(String[] rgs) {
+		Scanner ml=new Scanner(System.in);
+		
+		int num=ml.nextInt();
+		
+		for(int i=0;i<12;i++) {
+			System.out.println(num + " x " + i + " = " +(num * i));
+		}
+
+	}
+
+}

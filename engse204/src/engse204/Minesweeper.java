@@ -12,7 +12,7 @@ public class Minesweeper {
 
         char[][] map = new char[R][C];
 
-        for (int i = 0; i < R; i++) {
+        for (int i=0;i<R;i++) {
             for (int j = 0; j < C; j++) {
                 map[i][j] = mi.next().charAt(0);
             }

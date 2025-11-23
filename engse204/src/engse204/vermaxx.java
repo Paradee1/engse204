@@ -2,23 +2,23 @@ package engse204;
 
 import java.util.Scanner;
 
-public class max { //แก้ 1.8
+public class vermaxx {//แก้ 1.8
 
 	public static void main(String[] rgs) {
-		Scanner ac=new Scanner(System.in);
+		Scanner mx=new Scanner(System.in);
+		
+		int n=mx.nextInt();
 		
 		int sum = 0;
 		
-		int n=ac.nextInt();
-		for(int i = 0 ; i < n ; i++) {
-			int num=ac.nextInt();
+		for(int i=0;i<n;i++) {
+			int num=mx.nextInt();
 			
 			if(num>sum) {
 				sum = num;
 			}
 		}
 		System.out.println(sum);
-
 	}
 
 }
