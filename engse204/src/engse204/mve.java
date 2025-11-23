@@ -9,8 +9,10 @@ public class mve {
 		
 		int num=ml.nextInt();
 		
-		for(int i=1;i<=12;i++) {
-			System.out.println(num + " x " + i + " = " +(num * i));
+		int i = 1;
+		while (i <= 12) {
+		    System.out.println(num + " x " + i + " = " + (num * i));
+		    i++;
 		}
 
 	}
