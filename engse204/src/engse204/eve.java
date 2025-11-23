@@ -7,13 +7,14 @@ public class eve {
 	public static void main(String[] rgs) {
 		Scanner ve=new Scanner(System.in);
 		
-		int num=ve.nextInt();
+		System.out.print("Input Number : ");
+		int number=ve.nextInt();
 		
-		if(num%2 == 0) {
-			System.out.println("Even");
+		if(number%2 == 0) {
+			System.out.println( "Even" );
 		}
 		else {
-			System.out.println("Odd");
+			System.out.println( "Odd" );
 		}
 
 	}
