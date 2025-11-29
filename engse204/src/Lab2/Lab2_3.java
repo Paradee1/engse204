@@ -15,25 +15,25 @@ public class Lab2_3 {
 			String id=an.nextLine();
 			String name=an.nextLine();
 			
-			Student ae = new Student(id,name);
+			Studenttwo ae = new Studenttwo(id,name);
 		}
-		System.out.println(Student.studentCout);
+		System.out.println(Studenttwo.studentCout);
 		an.close();
 	}
 
 }
 
-class Student {
+class Studenttwo {
 	private String studentId;
 	private String name;
 	
 	public static int studentCout = 0;
 	
-	public Student(String studentId, String name) {
+	public Studenttwo(String studentId, String name) {
 		this.studentId = studentId;
 		this.name = name;
 
-		Student.studentCout++;
+		Studenttwo.studentCout++;
 	}
 	
 }
