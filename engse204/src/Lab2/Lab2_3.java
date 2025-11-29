@@ -4,24 +4,21 @@ import java.util.Scanner;
 
 public class Lab2_3 {
 
-	public static void main(String[] args) {
-		Scanner st=new Scanner(System.in);
+	public static void main(String[] rgs) {
+		Scanner an=new Scanner(System.in);
 		
-		System.out.print("จำนวนนักเรียนที่ลงทะเบียน : ");
-		int N=st.nextInt();
+		int N=an.nextInt();
 		
-		st.nextLine();
+		an.nextLine();
 		
 		for(int i=0;i<N;i++) {
-			System.out.print("รหัสนักศึกษา : ");
-			String id=st.nextLine();
-			System.out.print("ชื่อ-นามสกุล : ");
-			String name=st.nextLine();
+			String id=an.nextLine();
+			String name=an.nextLine();
 			
 			Student ae = new Student(id,name);
 		}
 		System.out.println(Student.studentCout);
-		st.close();
+		an.close();
 	}
 
 }
