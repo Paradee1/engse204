@@ -13,7 +13,6 @@ public class ari {
 		double area=calculateArea(x,y);
 		
 		System.out.println(area);
-		
 	}
 
 	static double calculateArea(double width, double height) {

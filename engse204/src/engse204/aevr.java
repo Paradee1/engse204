@@ -18,7 +18,7 @@ public class aevr {
 			data[i]=ar.nextInt();
 			sum += data[i];
 		}
-		ave = sum / n;
+		ave = sum / n ;
 		System.out.println("Average = "+ave);
 	}
 

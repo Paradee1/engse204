@@ -12,10 +12,10 @@ public class vermaxx {
 		int sum = 0;
 		
 		for(int i=0;i<n;i++) {
-			int num=mx.nextInt();
+			int number=mx.nextInt();
 			
-			if(num>sum) {
-				sum = num;
+			if(number>sum) {
+				sum = number;
 			}
 		}
 		System.out.println(sum);
