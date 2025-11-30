@@ -5,48 +5,53 @@ import java.util.Scanner;
 public class Lab2_4 {
 
 	public static void main(String[] rgs) {
-		Scanner cs=new Scanner(System.in);
+		Scanner cs = new Scanner(System.in) ;
 
-		System.out.print("Input Name: ");
-		String name=cs.nextLine();
-		System.out.print("Input MidtermScore: ");	
-		int midtermscore=cs.nextInt();
-		System.out.print("Input FinalScore: ");
-		int finalscore=cs.nextInt();
+		System.out.print( "Input Name: " ) ;
+		String name = cs.nextLine() ;
 		
-		Student av = new Student(name, midtermscore, finalscore);
+		System.out.print( "Input MidtermScore: " ) ;	
+		int midtermscore = cs.nextInt() ;
 		
-		av.displaySummary();
+		System.out.print( "Input FinalScore: " ) ;
+		int finalscore = cs.nextInt() ;
+		
+		Student av = new Student(name, midtermscore, finalscore) ;
+		
+		av.displaySummary() ;
+		
+		cs.close() ;
 
 	}
 
 }
 
 class Student {
-	private String name;
-	private int midtermScore;
-	private int finalScore;
+	private String name ;
+	private int midtermScore ;
+	private int finalScore ;
 	
 	public Student(String name, int midtermScore, int finalScore) {
-		this.name=name;
-		this.midtermScore=midtermScore;
-		this.finalScore=finalScore;
+		this.name = name ;
+		this.midtermScore = midtermScore ;
+		this.finalScore = finalScore ;
 	}
 	
 	public double calculateAverage() {
-			return (midtermScore + finalScore) / 2.0 ;
+			return ( midtermScore + finalScore ) / 2.0 ;
 		}
 		
-		public void displaySummary() {
-			double averageScore = calculateAverage() ;
+	public void displaySummary() {
+	double averageScore = calculateAverage() ;
 			
-			System.out.println("Name: "+this.name);
-			System.out.println("Average Score: "+averageScore);
-			if(averageScore >= 50.0) {
-				System.out.println("Status: Pass");
-			}
-			else {
-				System.out.println("Status: Fail");
-			}
+	System.out.println( "Name: " + this.name ) ;
+	System.out.println( "Average Score: " + averageScore) ;
+	
+	if(averageScore >= 50.0) {
+		System.out.println( "Status: Pass" ) ;
+	}
+	else {
+		System.out.println( "Status: Fail" ) ;
 		}
+	}
 }

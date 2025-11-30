@@ -5,22 +5,24 @@ import java.util.Scanner;
 public class Lab2_8 {
 
 	public static void main(String[] rgs) {
-		Scanner cf=new Scanner(System.in);
+		Scanner cf = new Scanner(System.in) ;
 		
-		System.out.print("Mode:");
-		String mode = cf.nextLine();
-		System.out.print("Temperature:");
-		double temp = cf.nextDouble();
+		System.out.print( "Mode:" ) ;
+		String mode = cf.nextLine() ;
 		
-		if(mode.equals("C_TO_F")) {
-			double result = TempConverter.celsiusToFahrenheit(temp);
-			System.out.println(result);
+		System.out.print( "Temperature:" ) ;
+		double temp = cf.nextDouble() ;
+		
+		if( mode.equals( "C_TO_F" )) {
+			double result = TempConverter.celsiusToFahrenheit(temp) ;
+			System.out.println(result) ;
 		}
-		else if(mode.equals("F_TO_C")) {
-			double result = TempConverter.fahrenheitToCelsius(temp);
-			System.out.println(result);
+		else if( mode.equals( "F_TO_C" )) {
+			double result = TempConverter.fahrenheitToCelsius(temp) ;
+			System.out.println(result) ;
 		}
 
+		cf.close() ;
 	}
 
 }

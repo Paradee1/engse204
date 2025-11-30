@@ -5,39 +5,37 @@ import java.util.Scanner;
 public class Lab2_5 {
 
 	public static void main(String[] rgs) {
-		Scanner wh=new Scanner(System.in);
+		Scanner wh = new Scanner(System.in) ;
 		
-		System.out.print("Width:");
-		double width=wh.nextDouble();
-		System.out.print("Height:");
-		double height=wh.nextDouble();
+		System.out.print( "Width: " ) ;
+		double width = wh.nextDouble() ;
 		
-		Rectangle ap = new Rectangle(width, height);
+		System.out.print( "Height: " ) ;
+		double height = wh.nextDouble() ;
 		
-		System.out.println("Area:"+ap.getArea());
-		System.out.println("Perimeter:"+ap.getPerimeter());
+		Rectangle ap = new Rectangle(width, height) ;
+		
+		System.out.println( "Area: " + ap.getArea() ) ;
+		System.out.println( "Perimeter: " + ap.getPerimeter() ) ;
 	}
 
 }
 
 class Rectangle {
-	private double width;
-	private double height;
+	private double width ;
+	private double height ;
 	
 	public Rectangle(double width, double height) {
-		this.width=width;
-		this.height=height;
+		this.width = width ;
+		this.height = height ;
 	}
 	
 	public double getArea() {
-		double area;
-		area = width * height;
-		return area;
+		return width * height ;
 	}
 	
 	public double getPerimeter() {
-		double perimeter;
-		perimeter = 2 * (width + height);
-		return perimeter;
+		return 2 * (width + height);
+
 	}
 }
