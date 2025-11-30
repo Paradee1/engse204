@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Lab2_7 {
 
-	public static void main(String[] args) {
+	public static void main(String[] rgs) {
 		Scanner su=new Scanner(System.in);
 		
 		System.out.print("Name:");
