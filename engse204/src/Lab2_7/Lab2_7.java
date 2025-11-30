@@ -19,6 +19,7 @@ public class Lab2_7 {
 		
 		wi.displayBalance() ;
 
+		su.close();
 	}
 
 }
