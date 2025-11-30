@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Lab2_5 {
 
-	public static void main(String[] args) {
+	public static void main(String[] rgs) {
 		Scanner wh=new Scanner(System.in);
 		
 		System.out.print("Width:");
