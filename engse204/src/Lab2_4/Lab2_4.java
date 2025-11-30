@@ -1,10 +1,10 @@
-package Lab2;
+package Lab2_4;
 
 import java.util.Scanner;
 
 public class Lab2_4 {
 
-	public static void main(String[] rgs) {
+	public static void main(String[] args) {
 		Scanner cs=new Scanner(System.in);
 
 		System.out.print("Input Name: ");
@@ -14,19 +14,20 @@ public class Lab2_4 {
 		System.out.print("Input FinalScore: ");
 		int finalscore=cs.nextInt();
 		
-		Studentthree av = new Studentthree(name, midtermscore, finalscore);
+		Student av = new Student(name, midtermscore, finalscore);
 		
 		av.displaySummary();
+
 	}
 
 }
 
-class Studentthree {
+class Student {
 	private String name;
 	private int midtermScore;
 	private int finalScore;
 	
-	public Studentthree(String name, int midtermScore, int finalScore) {
+	public Student(String name, int midtermScore, int finalScore) {
 		this.name=name;
 		this.midtermScore=midtermScore;
 		this.finalScore=finalScore;
