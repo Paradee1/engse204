@@ -5,72 +5,70 @@ import java.util.Scanner;
 public class Lab2_10 {
 
 	public static void main(String[] rgs) {
-		Scanner sp = new Scanner(System.in);
+		Scanner ps = new Scanner(System.in);
+
+		// จำนวนสินค้าที่จะเพิ่มลงตะกร้า
+		int N = ps.nextInt();
+		ps.nextLine();
 		
-		// รับจำนวนสินค้าที่จะเพิ่มลงตะกร้า
-		int N = sp.nextInt();
-		sp.nextLine();
+		ShoppingCart sp = new ShoppingCart();
 		
-		ShoppingCart cart = new ShoppingCart() ;
-		
-		// รับข้อมูลสินค้าแต่ละชิ้น
-		for(int i = 0 ; i < N ; i++ ) {
+		for(int j = 0 ; j < N ; j++ ) {
 			
-			// รับชื่อสินค้า
-			String name = sp.nextLine();
+			// ชื่อสินค้า
+			String productname = ps.nextLine() ;
 			
-			 // รับราคาสินค้า
-			double price = sp.nextDouble();
-			sp.nextLine();
+			//ราคาสินค้า
+			double productprice = ps.nextDouble() ;
+			ps.nextLine();
 			
-		    // สร้างออบเจ็กต์สินค้า
-			Product p = new Product(name, price) ;
+			Product pd = new Product(productname, productprice) ;
 			
-			 // เพิ่มสินค้าลงตะกร้า
-			cart.addProduct(p);
+			sp.addProduct(pd);
 		}
 		
-		 // คำนวณราคารวม
-		double total = cart.calculateTotalPrice() ;
+		double totalfinal = sp.calculateTotalPrice();
 		
-		  // แสดงผลรวมราคา
-		System.out.println(total) ;
+		// แสดงราคารวมสินค้า
+		System.out.println(totalfinal);
 		
-		sp.close() ;
+		ps.close();
 	}
 
 }
 
 class Product {
 	private String name ;
-	public double price ;
+	private double price ;
 	
 	public Product(String name, double price) {
 		this.name = name ;
 		this.price = price ;
 	}
+	
+	public double getPrice() { 
+        return price;
+    }
 }
 
 class ShoppingCart {
 	private Product[] items = new Product[10] ;
 	private int itemCount ;
 	
-	
-	// เพิ่มสินค้าแต่ละชิ้นลงใน array
+	// เพิ่มสินค้าในarray
 	public void addProduct(Product p) {
 		items[itemCount] = p ;
 		itemCount++ ;
 	}
 	
-	// รวมราคาสินค้าทั้งหมด
+	// รวมราคาสินค้า
 	public double calculateTotalPrice() {
-		double sum = 0 ;
+		double total = 0 ;
 		
-		for(int j = 0 ; j < itemCount ; j++ ) {
-			sum += items[j].price ;
+		for(int i = 0 ; i < itemCount ; i++ ) {
+			total += items[i].getPrice() ;
 		}
 		
-		return sum ;
-		
+		return total ;
 	}
 }
