@@ -15,7 +15,7 @@ public class Lab2_11 {
 		
 		st.setYear(newyear) ;
 
-		System.out.println("Model" +st.getModel()) ;
+		System.out.println("Model:" +st.getModel()) ;
 		System.out.println("Year:" +st.getYear()) ;
 	}
 
