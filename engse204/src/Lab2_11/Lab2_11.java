@@ -7,16 +7,24 @@ public class Lab2_11 {
 	public static void main(String[] rgs) {
 		Scanner md = new Scanner(System.in) ;
 		
+		// รับข้อมูลชื่อรุ่น
 		String name = md.nextLine() ;
+		
+		// รับข้อมูลปีที่ผลิต
 		int year = md.nextInt() ;
+		
+		// รับข้อมูลปีที่อัพเดต
 		int newyear = md.nextInt() ;
 		
 		Car st = new Car(name, year) ;
 		
+		// อัปเดตปีที่ผลิตใหม่
 		st.setYear(newyear) ;
 
 		System.out.println("Model:" +st.getModel()) ;
 		System.out.println("Year:" +st.getYear()) ;
+		
+		md.close();
 	}
 
 }
@@ -38,6 +46,7 @@ class Car {
 		return year ;
 	}
 	
+	// method: สำหรับแก้ไขปีที่ผลิต
 	public void setYear(int newYear) {
 		year = newYear ;
 	}

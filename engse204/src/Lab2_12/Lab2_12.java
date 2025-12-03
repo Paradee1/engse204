@@ -7,15 +7,25 @@ public class Lab2_12 {
 	public static void main(String[] rgs) {
 		Scanner nw = new Scanner(System.in) ;
 		
-		String courseid = nw.nextLine();
+		// รับข้อมูลรหัสวิชา
+		String courseid = nw.nextLine(); 
+		
+		// รับข้อมูลชื่อวิชา
 		String coursename = nw.nextLine();
+		
+		// รับข้อมูลชื่อนักศึกษา
 		String namestudent = nw.nextLine();
 		
+		// สร้างออบเจ็กต์ Course โดยส่งรหัสวิชาและชื่อวิชาเข้าไปใน constructor
 		Course co = new Course(courseid, coursename) ;
 		
+		// สร้างออบเจ็กต์ Student โดยส่งชื่อ และ ออบเจ็กต์ Course เข้าไป
 		Student st = new Student(namestudent, co) ;
 		
+		// เรียกใช้เมธอดdisplayEnrollmentเพื่อแสดงข้อมูลการลงทะเบียนของนักศึกษา
 		st.displayEnrollment();
+		
+		nw.close();
 	}
 
 }
@@ -45,6 +55,6 @@ class Student {
 	
 	public void displayEnrollment() {
 		System.out.println("Student:"+studentName) ;
-		System.out.println("Enrolles in:" +enrolledCourse.getCourseInfo()) ;
+		System.out.println("Enrolled in:" +enrolledCourse.getCourseInfo()) ;
 	}
 }
