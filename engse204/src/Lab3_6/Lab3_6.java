@@ -16,7 +16,7 @@ public class Lab3_6 {
 		bk.deposition(depositAmount);
 		bk.withdraw(withdrawAmount);
 		
-		System.out.println(bk.getBalance());
+		System.out.println("Final Balance:" + bk.getBalance());
 	}
 
 }
@@ -49,7 +49,7 @@ class BankAccount {
 	}
 	
 	public void withdraw(double amount) {
-		if(amount >= 0) {
+		if(amount > 0 && amount <= balance) {
 			balance -= amount;
 			System.out.println("Withdrawal successful.");
 		}
