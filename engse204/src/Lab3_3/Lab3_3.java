@@ -11,6 +11,9 @@ public class Lab3_3 {
 		String NewPass = ps.nextLine();
 		
 		User pt = new User(StartPass);
+		
+		System.out.println("-------------------------------------");
+		
 		pt.setPassword(NewPass);
 		System.out.println(pt.getPassword());
 

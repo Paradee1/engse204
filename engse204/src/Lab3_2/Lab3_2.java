@@ -13,6 +13,8 @@ public class Lab3_2 {
 		
 		Player py = new Player(startScore);
 		
+		System.out.println("-------------------------");
+		
 		py.setScore(updateScoer);
 		System.out.println(py.getScore());
 		

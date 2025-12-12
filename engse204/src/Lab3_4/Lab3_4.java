@@ -16,6 +16,8 @@ public class Lab3_4 {
 			Product pr = new Product(name);
 		}
 		
+		System.out.println("--------------------");
+		
 		System.out.println(Product.getProductCount());
 		pd.close();
 	}
