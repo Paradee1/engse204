@@ -10,6 +10,8 @@ public class Lab3_5 {
 		String connectString = dc.nextLine();
 		DatabaseConnection tn = new DatabaseConnection(connectString);
 		
+		System.out.println("-----------------------------");
+		
 		tn.connect();
 		tn.disconnect();
 		tn.disconnect();

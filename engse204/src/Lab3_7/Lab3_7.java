@@ -17,6 +17,7 @@ public class Lab3_7 {
 		em.getEmployeeId();
 		em.getDepartment();
 		
+		System.out.println("-------------------------");
 		System.out.println(em.getEmployeeId());
 		System.out.println(em.getDepartment());
 	}
