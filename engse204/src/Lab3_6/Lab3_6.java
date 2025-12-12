@@ -13,6 +13,8 @@ public class Lab3_6 {
 		
 		BankAccount bk = new BankAccount(startAmount);
 		
+		System.out.println("--------------------------------");
+		
 		bk.deposition(depositAmount);
 		bk.withdraw(withdrawAmount);
 		
