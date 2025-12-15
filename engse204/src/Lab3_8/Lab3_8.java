@@ -29,6 +29,7 @@ public class Lab3_8 {
 		}
 		
 		System.out.println("Final:" + iv.getStock());
+		st.close();
 	}
 
 }
@@ -67,6 +68,7 @@ class InventoryItem {
 	}
 	
 	public void sellStock(int amount) {
+		
 		if(amount > 0 && amount <= stock) {
 			stock -= amount;
 			System.out.println("Sale successful.");
