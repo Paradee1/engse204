@@ -24,7 +24,7 @@ public class Lab4_7 {
 		
 		System.gc();
 		
-		gf.close();
+		
 	}
 
 }
