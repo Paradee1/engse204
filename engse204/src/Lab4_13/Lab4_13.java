@@ -86,6 +86,4 @@ class Subscription {
 		System.out.println("Plan: " + planName + ", Days: " + durationDays);
 	}
 	
-	
-	
 }
