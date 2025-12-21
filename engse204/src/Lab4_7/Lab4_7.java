@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Lab4_7 {
 
 	public static void main(String[] args) {
-		Scanner gf = new Scanner(System.in);
+		Scanner Scanner = new Scanner(System.in);
 		
-		String id1 = gf.nextLine();
-		String id2 = gf.nextLine();
-		String id3 = gf.nextLine();
+		String id1 = Scanner.nextLine();
+		String id2 = Scanner.nextLine();
+		String id3 = Scanner.nextLine();
 		
 		Resource r1 = new Resource(id1);
 		Resource r2 = new Resource(id2);
@@ -24,7 +24,7 @@ public class Lab4_7 {
 		
 		System.gc();
 		
-		gf.close();
+		Scanner.close();
 	}
 
 }

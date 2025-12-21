@@ -7,18 +7,23 @@ public class Lab4_15 {
 	public static void main(String[] args) {
 		Scanner kl = new Scanner(System.in);
 		
+		// รับค่า max
 		int max = kl.nextInt();
 		kl.nextLine();
 		
 		AuditRecord.setPolicy(max);
 		
 		String Username = kl.nextLine();
+		
+		// รับจำนวนคำสั่ง LOG
 		int N = kl.nextInt();
 		kl.nextLine();
 		
 		AuditRecord ad = new AuditRecord(Username);
 		
 		for(int i = 0; i < N; i++) {
+			
+			// รับข้อความ Log
 			String Logs = kl.nextLine();
 			
 			if(Logs.equals("SET_POLICY")) {
@@ -44,10 +49,12 @@ class AuditRecord {
 	private final String[] logMessages;
 	private static int maxMessages = 3;
 	
+	// Simple Constructor
 	public AuditRecord(String user) {
 		this(user, new String[0]);
 	}
 	
+	// Main Constructor
 	public AuditRecord(String user, String[] logs) {
 		this.user = user;
 		if(logs.length > maxMessages) {
@@ -64,6 +71,7 @@ class AuditRecord {
 		}
 	}
 	
+	// Static Setter
 	public static void setPolicy(int max) {
 		if(max > 0) {
 			maxMessages = max;
@@ -74,6 +82,7 @@ class AuditRecord {
 		}
 	}
 	
+	// Immutable Action
 	public AuditRecord addMessages(String message) {
 	    if (this.logMessages.length >= maxMessages) {
 	        System.out.println("Log is full.");

@@ -7,6 +7,7 @@ public class Lab4_4 {
 	public static void main(String[] args) {
 		Scanner cs = new Scanner(System.in);
 		
+		// รับละติจูดเริ่มต้น ลองติจูดเริ่มต้น และ ละติจูดใหม่
 		double Latitude = cs.nextDouble();
 		double Longitude = cs.nextDouble();
 		double newLatitude = cs.nextDouble();
@@ -28,11 +29,13 @@ class Location {
 	private double latitude;
 	private double longitude;
 	
+	// Constructor 
 	public Location(double latitude, double longitude) {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
 	
+	// Constructor 
 	public Location(Location other) {
 		this.latitude = other.latitude;
 		this.longitude = other.longitude;

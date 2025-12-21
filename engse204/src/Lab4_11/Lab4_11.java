@@ -32,6 +32,7 @@ class Configuration {
 	private int fontSize;
 	private boolean darkMode;
 	
+	// main Constructor
 	public Configuration(String theme, int fontSize, boolean darkMode) {
 		if(fontSize < 10) {
 			this.fontSize = 10;
@@ -47,6 +48,7 @@ class Configuration {
 		this.darkMode = darkMode;
 	}
 	
+	// Merge Constructor
 	public Configuration(Configuration base, Configuration user) {
 		this.theme = user.theme;
 		this.darkMode = user.darkMode;

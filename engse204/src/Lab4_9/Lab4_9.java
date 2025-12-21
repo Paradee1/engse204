@@ -7,6 +7,7 @@ public class Lab4_9 {
 	public static void main(String[] args) {
 		Scanner yh = new Scanner(System.in);
 		
+		// รับID , ยอดเงินเริ่มต้น , ฝากเงิน , ถอนเงิน 
 		String ID = yh.nextLine();
 		double startbalance = yh.nextDouble();
 		double depositAmount = yh.nextDouble();
@@ -28,6 +29,7 @@ class ImmutableAccount {
 	private final String accountId;
 	private final double balance;
 	
+	// Constructor 
 	public ImmutableAccount(String accountId, double balance) {
 		this.accountId = accountId;
 		if(balance < 0.0) {
@@ -39,15 +41,18 @@ class ImmutableAccount {
 		}
 	}
 	
+	// Copy Constructor 
 	public ImmutableAccount(ImmutableAccount other) {
 		this.accountId = other.accountId;
 		this.balance = other.balance;
 	}
 	
+	// Getter
 	public String getAccountId() {
 		return accountId;
 	}
 	
+	// Getter
 	public double getBalance() {
 		return balance;
 	}

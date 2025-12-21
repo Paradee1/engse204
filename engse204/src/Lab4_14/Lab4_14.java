@@ -7,8 +7,10 @@ public class Lab4_14 {
 	public static void main(String[] args) {
 		Scanner gh = new Scanner(System.in);
 		
+		// รับชื่อเกม
 		String GameName = gh.nextLine();
 
+		// รับคะแนนเริ่มต้น 3 ค่า
 		int[] originalScores = new int[3];
 		
 		for(int i = 0; i < 3; i++) {
@@ -33,11 +35,13 @@ class ScoreBoard {
 	private String gameName;
 	private int[] scores;
 	
+	// Main Constructor
 	public ScoreBoard(String gameName, int[] scores) {
 		this.gameName = gameName;
 		this.scores = scores;
 	}
 	
+	// Copy Constructor
 	public ScoreBoard(ScoreBoard other) {
 		this.gameName = other.gameName;
 		this.scores = new int[other.scores.length];

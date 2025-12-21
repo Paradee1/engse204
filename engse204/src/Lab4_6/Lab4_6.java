@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class Lab4_6 {
 
 	public static void main(String[] args) {
-		Scanner df = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
-		int x = df.nextInt();
-		int y = df.nextInt();
+		// รับค่าเริ่มต้น X Y
+		int x = scanner.nextInt();
+		int y = scanner.nextInt();
 		
-		int dx = df.nextInt();
-		int dy = df.nextInt();
+		// รับค่ากรเคลื่อนที่
+		int dx = scanner.nextInt();
+		int dy = scanner.nextInt();
 		
 		Point p1 = new Point(x, y);
 		Point p2 = p1.move(dx, dy);
@@ -21,7 +23,7 @@ public class Lab4_6 {
 		p2.displayInfo();
 		p3.displayInfo();
 		
-		df.close();
+		scanner.close();
 	}
 
 }
@@ -30,6 +32,7 @@ class Point {
 	private final int x;
 	private final int y;
 	
+	// Constructor 
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;

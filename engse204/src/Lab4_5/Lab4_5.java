@@ -4,78 +4,76 @@ import java.util.Scanner;
 
 public class Lab4_5 {
 
-	public static void main(String[] args) {
-		Scanner fd = new Scanner(System.in);
-		
-		int R = fd.nextInt();
-		int G = fd.nextInt();
-		int B = fd.nextInt();
+    public static void main(String[] args) {
 
-		Color rgb = new Color(R, G, B);
-		
-		rgb.displayRGB();
-		
-		fd.close();
-	}
+        // Scanner used for reading RGB values from user input
+        Scanner scanner = new Scanner(System.in);
 
+        // Read RGB values
+        int redValue = scanner.nextInt();
+        int greenValue = scanner.nextInt();
+        int blueValue = scanner.nextInt();
+
+        // Create Color object with validated RGB values
+        Color rgbColor = new Color(redValue, greenValue, blueValue);
+
+        // Display RGB result
+        rgbColor.displayRGB();
+
+        scanner.close();
+    }
 }
 
 class Color {
-	private int red;
-	private int green;
-	private int blue;
-	
-	public Color(int r, int g, int b) {
-		
-		//red
-		if(r < 0) {
-			this.red = 0;
-		}
-		else if(r > 255) {
-			this.red = 255;
-		}
-		else {
-			this.red = r;
-		}
-		
-		//green
-		if(g < 0) {
-			this.green = 0;
-		}
-		else if(g > 255) {
-			this.green = 255;
-		}
-		else {
-			this.green = g;
-		}
-		
-		//blue
-		if(b < 0) {
-			this.blue = 0;
-		}
-		else if(b > 255) {
-			this.blue = 255;
-		}
-		else {
-			this.blue = b;
-		}
-		
-	}
-	
-	public int getRed() {
-		return red;
-	}
-	
-	public int getGreen() {
-		return green;
-	}
-	
-	public int getBlue() {
-		return blue;
-	}
-	
-	public void displayRGB() {
-		System.out.println("R= " + red + ", G= " + green + ", B= " + blue);
-	}
-	
+
+    private int red;
+    private int green;
+    private int blue;
+
+    public Color(int redValue, int greenValue, int blueValue) {
+
+        // Ensure red value is within valid RGB range (0–255)
+        if (redValue < 0) {
+            this.red = 0;
+        } else if (redValue > 255) {
+            this.red = 255;
+        } else {
+            this.red = redValue;
+        }
+
+        // Ensure green value is within valid RGB range (0–255)
+        if (greenValue < 0) {
+            this.green = 0;
+        } else if (greenValue > 255) {
+            this.green = 255;
+        } else {
+            this.green = greenValue;
+        }
+
+        // Ensure blue value is within valid RGB range (0–255)
+        if (blueValue < 0) {
+            this.blue = 0;
+        } else if (blueValue > 255) {
+            this.blue = 255;
+        } else {
+            this.blue = blueValue;
+        }
+    }
+
+    public int getRed() {
+        return red;
+    }
+
+    public int getGreen() {
+        return green;
+    }
+
+    public int getBlue() {
+        return blue;
+    }
+
+    // Display RGB values in required format
+    public void displayRGB() {
+        System.out.println("R= " + red + ", G= " + green + ", B= " + blue);
+    }
 }

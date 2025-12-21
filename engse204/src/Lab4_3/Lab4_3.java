@@ -7,6 +7,7 @@ public class Lab4_3 {
 	public static void main(String[] args) {
 		Scanner at = new Scanner(System.in);
 		
+		// รับโหมด
 		int N = at.nextInt();
 		at.nextLine();
 		
@@ -15,6 +16,8 @@ public class Lab4_3 {
 			py.displayProfile();
 		}
 		else if(N == 2) {
+			
+			// รับชื่อผู้ใช้และเลเวล
 			String Username = at.nextLine();
 			int Level = at.nextInt();
 			
@@ -32,11 +35,13 @@ class Player {
 	private String username;
 	private int level;
 	
+	// Constructor 
 	public Player() {
 		this.username = "Guest";
 		this.level = 1;
 	}
 	
+	// Constructor 
 	public Player(String username, int level) {
 		this.username = username;
 		this.level = level;
