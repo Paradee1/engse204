@@ -19,6 +19,8 @@ public class Lab4_6 {
 		Point p2 = p1.move(dx, dy);
 		Point p3 = p2.move(dx, dy);
 
+		System.out.println("-----------------------");
+		
 		p1.displayInfo();
 		p2.displayInfo();
 		p3.displayInfo();
