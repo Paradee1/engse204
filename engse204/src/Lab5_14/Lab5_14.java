@@ -24,6 +24,7 @@ public class Lab5_14 {
 			System.out.println(s.calculateTotalFee());
 		}
 		
+		fd.close();
 	}
 
 }

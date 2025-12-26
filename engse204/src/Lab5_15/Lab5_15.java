@@ -26,6 +26,7 @@ public class Lab5_15 {
 		}
 		
 		System.out.println(totalRentalFee);
+		
 		sd.close();
 	}
 
