@@ -7,7 +7,10 @@ public class Lab5_5 {
 	public static void main(String[] args) {
 		Scanner qw = new Scanner(System.in);
 		
+		// รับInputสำหรับ Circle
 		double Radius = qw.nextDouble();
+		
+		// รับInputสำหรับ Rectangle
 		double Width = qw.nextDouble();
 		double Height = qw.nextDouble();
 		
@@ -25,26 +28,36 @@ public class Lab5_5 {
 
 }
 
+//Superclass/Parent
 class Shape {
+	
+	// Attributes
 	protected String name;
 	
+	// Constructor
 	public Shape(String name) {
 		this.name = name;
 	}
 	
+	// Methods
 	public double calculateArea() {
 		return 0.0;
 	}
 }
 
+//Subclass/Child
 class Circle extends Shape {
+	
+	// Attributes
 	protected double radius;
 	
+	// Constructor
 	public Circle(String name, double radius) {
 		super(name);
 		this.radius = radius;
 	}
 	
+	// Methods
 	@Override
 	public double calculateArea() {
 		return 3.14159 * radius * radius;
